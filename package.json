@@ -1,0 +1,37 @@
+{
+  "name": "lumen-cms-uppy-server",
+  "version": "1.0.0",
+  "description": "Uppy server to run in NodeJs",
+  "main": "src/index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "memorystore": "^1.6.0",
+    "rimraf": "^2.6.2",
+    "uppy-server": "^0.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "TZ=utc NODE_ENV=development nodemon src/index.js",
+    "start": "TZ=utc NODE_ENV=production node ./src/index.js"
+  },
+  "now": {
+    "name": "uppy-server-lumen",
+    "alias": "uppy-server.lumen.media"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumen-cms/uppy-server.git"
+  },
+  "author": "Dominic Garms <djgarms@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lumen-cms/uppy-server/issues"
+  },
+  "homepage": "https://github.com/lumen-cms/uppy-server#readme"
+}
